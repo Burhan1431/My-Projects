@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+#top{
+    min-height: 60vh;
+    width: 100%;
+    background-image: url(./media/averie-woodard-Av_NirIguEc-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#overlay{
+    padding: 50px 0px 0px 0px;
+    position: relative;
+    min-height: inherit;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.066);
+}
+#text{
+    align-items: center;
+    bottom: 20%;
+    position: absolute;
+    width: 100%; 
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+#text h1{
+    font-size: 6vw;
+    color: white;
+    font-weight: 500;
+}
+#text-right{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+#text-right p{
+    font-size: 12px;
+    width: 40%;
+}
+#text-right i{
+    color: #fff;
+}
+#bottom{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+}
+#b-one{
+    min-height: inherit;
+    width: 25%;
+    background-color: #fff;
+}
+#b-one h5{
+    font-size: 30px;
+    margin: 40px 0px 0px 40px;
+}
+#b-one p{
+    font-size: 20px;
+    margin: 20px 0px 0px 40px;
+    width: 100px;
+}
+#b-two{
+    min-height: inherit;
+    width: 25%;
+    background-image: url(./media/pic2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#b-three{
+    min-height: inherit;
+    width: 20%;
+    
+}
+#b-three-top{
+    height: 50%;
+    width: 100%;
+    background-color: orangered;
+    padding: 10px;
+    color: #fff;
+}
+#b-three-top h4{
+    font-size: 25px;
+}
+#b-three-top p{
+    font-size: 12px;
+    padding: 5px;
+}
+#b-three-bottom{
+    height: 50%;
+    width: 100%;
+    background-image: url(./media/pic3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#b-four{
+    min-height: inherit;
+    width: 30%;
+    background-color: #444;
+    color: #fff;
+}
+.notf{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.notf #photo{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.notf p{
+    width: 85%;
+    font-size: 15px;
+}
+
+
+
+@media (max-width: 500px;){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #textright{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;    
+    }
+    #overlay #text #textright #icons{
+        margin-top: 30px;
+    }
+    #text h1{
+        font-size: 10vw;
+    }
+}
