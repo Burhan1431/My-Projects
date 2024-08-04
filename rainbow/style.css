@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.circle-container {
+  display: flex;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  animation: color-rotation 7s infinite linear;
+}
+
+#circle1 { background-color: red; }
+#circle2 { background-color: orange; }
+#circle3 { background-color: yellow; }
+#circle4 { background-color: green; }
+#circle5 { background-color: blue; }
+#circle6 { background-color: indigo; }
+#circle7 { background-color: violet; }
+
+@keyframes color-rotation {
+  0%   { background-color: red; }
+  14.2857% { background-color: orange; }
+  28.5714% { background-color: yellow; }
+  42.8571% { background-color: green; }
+  57.1429% { background-color: blue; }
+  71.4286% { background-color: indigo; }
+  85.7143% { background-color: violet; }
+  100% { background-color: red; }
+}

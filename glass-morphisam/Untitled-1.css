@@ -1,0 +1,25 @@
+
+
+.header{
+    font-size: 100px;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 180px;
+    font-weight: 900;
+}
+.bottom{
+    width: 100%;
+    padding-left: 500px;
+    
+}
+.main{
+    background-image: url(./media/pic1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.bottom .card{
+    background-color: rgba(225, 2, 225, 0.3);
+    backdrop-filter: blur(2px);
+}

@@ -1,3 +1,6 @@
+.main{
+    background-color: rgb(150,205,205);
+}
 .body{
     width: 100%;
     border-bottom: 10px solid skyblue;
@@ -29,13 +32,27 @@
     align-items: center;
 }
 .card1-img1{
-    
+    background-image: url(./1f97a.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100px;
     width: 100px;
     border: 2px solid gray;
     border-radius: 50%;
     margin-left: 75px;
+    animation: autoRotateAnimation;
+    animation-timeline: view();
 }
+@keyframes autoRotateAnimation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .firstcards-bottom{
     text-align: end;
     color: rgb(119, 243, 144);
@@ -43,7 +60,9 @@
     font-weight: bolder;
     padding-right: 30px;
     
+    
 }
+
 .rok-climb-main-dv{
     padding-left: 100px;
     padding-right: 100px;
@@ -55,6 +74,21 @@
 .rockclimbing{
 width: 50%;
 }
+ .autoshow{
+    animation: autoshowanimation both;
+    animation-timeline: view(70% 5%);
+ }
+ @keyframes autoshowanimation {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+ }
 .events{
     width: 400px;
     font-size: 20px;
@@ -67,10 +101,22 @@ width: 50%;
     border-radius: 50%;
     margin-left: 150px;
     margin-top: 50px;
-    background-image: url(./sebastien-goldberg-BKLHxgbYFDI-unsplash.jpg);
+    background-image: url(./1f611.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     
+animation: autoRotateAnimation;
+animation-timeline: view();
+    
+}
+@keyframes autoRotateAnimation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 .b{
     text-align: end;
@@ -424,4 +470,21 @@ width: 50%;
 }
 .footer-right-side .p4 span{
     margin-left: 30px;
+}
+.autoblur{
+    animation: autobluranimation linear both;
+    animation-timeline: view();
+
+}
+@keyframes autobluranimation {
+    0%{
+        filter: blur(40px);
+    }
+    45%, 55%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+    }
+    
 }

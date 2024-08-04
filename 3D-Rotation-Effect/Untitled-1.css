@@ -1,0 +1,39 @@
+.banner {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .products {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    --left: 0px; /* Initialize custom property for transition */
+    display: flex;
+}
+
+.banner .products .soda {
+    background: 
+        var(--url, none) var(--left, 0px), /* Default to none if --url is not defined */
+        url(./media/freepik-export-20240707201016E7s2.png);
+    background-size: auto 100%;
+    width: 280px;
+    aspect-ratio: 2/4; 
+    background-blend-mode: multiply;
+    mask-image: url(./media/freepik-export-20240707201016E7s2.png); /* Define a mask image if needed */
+    mask-size: auto 100%;
+    transition: 0.7s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .products:hover {
+    --left: 1000px; /* Update --left on hover */
+    transform: translateX(-50%) translateY(-120px);
+}
